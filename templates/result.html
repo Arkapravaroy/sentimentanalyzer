@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+   <body>
+     <font size="75" face="verdana" color="Black">Prediction Table</font>
+      <table border = 1>
+         {% for key, value in result.items() %}
+            <tr>
+               <th align="center"> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+      <form action = "/" method = "POST">
+        <p><left><input type = "submit" value = "Try another one" ></left></p>
+
+      </form>
+   </body>
+</html>
